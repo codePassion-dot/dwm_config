@@ -18,7 +18,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "WWW", "CMD", "DOC", "CHAT", "MAIL", "VID", "MUS", "CONF", "AUX" };
+static const char *tags[] = { "WWW", "PRO", "DOC", "CHAT", "MAIL", "VID", "MUS", "CONF", "AUX" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -26,10 +26,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-        { "Firefox",  NULL,       NULL,       2 << 9,       0,           -1 },
-	{ "Iceweasel",  NULL,       NULL,       1 << 8,       0,           -1 },
-        { "Gnome-terminal", "gnome-terminal-server", NULL, 2, 0, -1},
+    { "Gimp",     NULL,       NULL,       0,            1,           -1 },
+    { "Firefox",  NULL,       NULL,       1,            0,           -1 },
+    { "Gnome-terminal", NULL, NULL,       0,            0,           -1 },
+    { "discord",  NULL,       NULL,       2,            0,           -1 },
+    { NULL,      "spotify",   NULL,     1 << 6,         0,           -1 },
+
 };
 
 /* layout(s) */
