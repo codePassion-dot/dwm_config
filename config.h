@@ -2,7 +2,7 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"CaskaydiaCove Nerd Font Mono:size=14"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char normbordercolor[] = "#444444";
@@ -28,6 +28,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
     { "Gimp",     NULL,       NULL,       0,            1,           -1 },
     { "Firefox",  NULL,       NULL,       1,            0,           -1 },
+    { "Firefox-esr",  NULL,       "(10) WhatsApp - Mozilla Firefox",       1 << 3,            0,           -1 },
     { "Gnome-terminal", NULL, NULL,       0,            0,           -1 },
     { "discord",  NULL,       NULL,       2,            0,           -1 },
     { NULL,      "spotify",   NULL,     1 << 6,         0,           -1 },
