@@ -2,7 +2,7 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"CaskaydiaCove Nerd Font Mono:size=14"
+	"Noto Color Emoji:size=14"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char normbordercolor[] = "#444444";
